@@ -2,26 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Agrega tus estilos personalizados aquí */
+
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  color:red;
+  padding: 2px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.dashboard-container {
+  width: 300px;
+  height: 100vh;
+  background-color: #f4f4f4;
+  overflow-y: auto;
+  padding: 20px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.dashboard-item {
+  margin-bottom: 20px;
+}
+
+.dashboard-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.dashboard-slider {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+}
+
+#border-graph{
+  border: black 1px solid;
+}
+
+.dashboard-value {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.chart-container {
+  flex-grow: 1;
+  background-color: #ffffff;
+  padding: 20px;
 }
